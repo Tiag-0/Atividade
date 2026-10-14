@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central da Música - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Central da Música</h1>
+
+        <nav>
+            <a href="index.html">Produtos</a>
+            <a href="detalhes.html">Detalhes</a>
+            <a href="cadastro.html" class="ativa">Cadastro</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="cadastro">
+            <h2>Solicitação de compra</h2>
+
+            <p>
+                Preencha o formulário abaixo e solicite o seu instrumento.
+            </p>
+
+            <form>
+
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <label for="nome">Nome completo:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        required>
+
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Instrumento de interesse</legend>
+
+                    <label for="instrumento">Escolha um instrumento:</label>
+
+                    <select id="instrumento" name="instrumento" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="violao-yamaha">Violão Yamaha F310</option>
+                        <option value="fender-stratocaster">Fender Stratocaster</option>
+                        <option value="yamaha-psr">Yamaha PSR-E373</option>
+                        <option value="pearl-roadshow">Pearl Roadshow</option>
+                        <option value="fender-jazz-bass">Fender Jazz Bass</option>
+                        <option value="tagima-dallas">Tagima Dallas</option>
+                        <option value="ibanez-grx70qa">Ibanez GRX70QA</option>
+                        <option value="casio-ct-s300">Casio CT-S300</option>
+                        <option value="michael-dmd500">Michael DMD500</option>
+                        <option value="tagima-tw73">Tagima TW-73</option>
+                    </select>
+
+                    <label>Forma de contato preferencial:</label>
+
+                    <div class="opcoes-radio">
+
+                        <input
+                            type="radio"
+                            id="contato-email"
+                            name="contato"
+                            value="email"
+                            required>
+
+                        <label for="contato-email">E-mail</label>
+
+                        <input
+                            type="radio"
+                            id="contato-telefone"
+                            name="contato"
+                            value="telefone">
+
+                        <label for="contato-telefone">Telefone</label>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Finalização</legend>
+
+                    <label for="mensagem">Observações:</label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        placeholder="Digite alguma observação ou dúvida"
+                        rows="5"></textarea>
+
+                    <button type="submit">
+                        Enviar solicitação
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Central da Música. Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>

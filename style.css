@@ -1,0 +1,432 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #202920;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #457c33;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #05c905;
+}
+
+nav .ativa {
+    color: #73ff00;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.introducao {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.introducao h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.introducao p {
+    color: #555;
+}
+
+.catalogo-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.card-produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-produto:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.card-produto img {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.card-produto h2 {
+    font-size: 20px;
+    margin: 15px 0 8px;
+}
+
+.card-produto p {
+    line-height: 1.5;
+}
+
+.categoria {
+    color: #666;
+    font-weight: bold;
+}
+
+.preco {
+    color: #b22222;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-produto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-produto a:hover {
+    background-color: #444;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #2b6623;
+    color: white;
+}
+
+.apresentacao {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.apresentacao h2 {
+    color: #333;
+}
+
+.apresentacao p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.video-musical {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.texto-video {
+    flex: 1;
+}
+
+.texto-video h2 {
+    color: #333;
+}
+
+.texto-video p {
+    line-height: 1.5;
+    color: #555;
+}
+
+.video {
+    flex: 1;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 8px;
+}
+
+.tabela-produtos {
+    margin: 30px;
+}
+
+.tabela-produtos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #fff0c2;
+}
+
+.estoque {
+    margin: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.estoque h2 {
+    margin-top: 0;
+}
+
+.indicador {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.indicador progress {
+    width: 300px;
+    height: 20px;
+}
+
+.solicitacao {
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+.botao-solicitar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.botao-solicitar:hover {
+    background-color: #218838;
+}
+
+.cadastro {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cadastro h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cadastro > p {
+    text-align: center;
+    color: #555;
+    line-height: 1.5;
+}
+
+form {
+    margin-top: 25px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+legend {
+    font-weight: bold;
+    color: #222;
+    padding: 0 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #222;
+    box-shadow: 0 0 5px rgba(34, 34, 34, 0.3);
+}
+
+.opcoes-radio {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.opcoes-radio label {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.opcoes-radio input[type="radio"] {
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+.area-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    padding: 30px;
+}
+
+.perfil {
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil h2 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.perfil p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.redes-sociais a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes-sociais a:hover {
+    color: #b22222;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contatos a {
+    padding: 10px 18px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contatos a:hover {
+    background-color: #444;
+}
